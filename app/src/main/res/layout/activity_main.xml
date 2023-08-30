@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="My Phone"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/img_phone"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt_title"
+        android:src="@drawable/samsung"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/name_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_phone"
+        android:text="@string/name_phone"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/price_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$599.99"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/img_phone"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/desc_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_phone"
+        android:layout_marginVertical="10dp"
+        android:text="@string/desc_phone"
+        android:textSize="15sp"/>
+    <ImageView
+        android:id="@+id/icon_memory"
+        android:src="@drawable/ic_baseline_phone_android_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc_phone"
+        android:layout_marginVertical="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="256 GB | 8 GB"
+        android:layout_toRightOf="@id/icon_memory"
+        android:layout_alignTop="@id/icon_memory"
+        android:layout_alignBottom="@id/icon_memory"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/icon_camera"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_memory"
+        android:layout_marginVertical="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="50 MP"
+        android:layout_toRightOf="@id/icon_camera"
+        android:layout_alignTop="@id/icon_camera"
+        android:layout_alignBottom="@id/icon_camera"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOOKMARK"
+        android:layout_alignParentBottom="true"
+        android:drawableRight="@drawable/ic_baseline_bookmark_24"
+        android:drawableTint="@color/white"/>
+
+
+</RelativeLayout>
